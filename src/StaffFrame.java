@@ -1,5 +1,6 @@
 package user;
 
+import com.formdev.flatlaf.FlatDarculaLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 import user.domin.StaffItem;
 import user.service.StaffService;
@@ -15,7 +16,7 @@ import java.awt.event.*;
 import java.util.List;
 
 public class StaffFrame extends JFrame implements ActionListener {
-    private final StaffService staffService = new StaffService();
+    private StaffService staffService = new StaffService();
     private JPanel contentPane;
     private JScrollPane scrollPane;
     protected JTable table;
@@ -146,10 +147,13 @@ public class StaffFrame extends JFrame implements ActionListener {
         );
         panel.setLayout(gl_panel);
 
-        cb_select.addItemListener(e -> {
-            if (e.getStateChange() == ItemEvent.SELECTED) {
-                order = getOrder(cb_select.getSelectedIndex());
-                query();
+        cb_select.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if (e.getStateChange() == ItemEvent.SELECTED) {
+                    order = getOrder(cb_select.getSelectedIndex());
+                    query();
+                }
             }
         });
 
@@ -193,7 +197,7 @@ public class StaffFrame extends JFrame implements ActionListener {
 
     }
 
-    public void query() {
+    public void query(){
 
     }
 
@@ -201,20 +205,27 @@ public class StaffFrame extends JFrame implements ActionListener {
         return num;
     }
 
-    public static String getOrderS() {
+    public static String getOrderS(){
         return order;
     }
 
     public String getOrder(int i) {
-        return switch (i) {
-            case 0 -> "select * from user order by staffNum ASC";
-            case 1 -> "select * from user order by staffNum DESC";
-            case 2 -> "select * from user order by staffName ASC";
-            case 3 -> "select * from user order by staffName DESC";
-            case 4 -> "select * from user order by type ASC";
-            case 5 -> "select * from user order by type DESC";
-            default -> "select * from user order by staffNum";
-        };
+        switch (i) {
+            case 0:
+                return "select * from user order by staffNum ASC";
+            case 1:
+                return "select * from user order by staffNum DESC";
+            case 2:
+                return "select * from user order by staffName ASC";
+            case 3:
+                return "select * from user order by staffName DESC";
+            case 4:
+                return "select * from user order by type ASC";
+            case 5:
+                return "select * from user order by type DESC";
+            default:
+                return "select * from user order by staffNum";
+        }
     }
 
     @Override
@@ -264,15 +275,17 @@ public class StaffFrame extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            try {
-                UIManager.setLookAndFeel(new FlatLightLaf());
-                StaffFrame frame = new StaffFrame();
-                frame.setVisible(true);
-            } catch (Throwable e) {
-                e.printStackTrace();
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    UIManager.setLookAndFeel(new FlatLightLaf());
+                    StaffFrame frame = new StaffFrame();
+                    frame.setVisible(true);
+                } catch (Throwable e) {
+                    e.printStackTrace();
+                }
             }
-
         });
     }
 }

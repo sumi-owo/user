@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exe4j version="8.0.1" transformSequenceNumber="3">
+  <directoryPresets config="C:/Users/asdfg/OneDrive/图片/asumi" />
+  <application name="User Management System" distributionSourceDir="C:/Users/asdfg/Desktop" />
+  <executable wrapperType="embed" iconSet="true" iconFile="C:/Users/asdfg/OneDrive/图片/asumi/澄1.ico" executableMode="gui" />
+</exe4j>

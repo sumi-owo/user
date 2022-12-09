@@ -14,8 +14,8 @@ public class StaffService {
 
     public boolean addStaffItem(StaffItem staffItem) {
         List<StaffItem> list = queryStaffItems();
-        for (StaffItem item : list) {
-            if (staffItem.getStaffNum().equals(item.getStaffNum())) {
+        for (int i = 0; i < list.size(); i++) {
+            if (staffItem.getStaffNum().equals(list.get(i).getStaffNum())) {
                 return false;
             }
         }
@@ -25,8 +25,8 @@ public class StaffService {
 
     public boolean updateStaffItem(StaffItem staffItem) {
         List<StaffItem> list = queryStaffItems();
-        for (StaffItem item : list) {
-            if (staffItem.getStaffNum().equals(item.getStaffNum())) {
+        for (int i = 0; i < list.size(); i++) {
+            if (staffItem.getStaffNum().equals(list.get(i).getStaffNum())) {
                 staffDao.updateStaffItem(staffItem);
                 return true;
             }
@@ -36,8 +36,8 @@ public class StaffService {
 
     public boolean delStaffItem(String delNum) {
         List<StaffItem> list = queryStaffItems();
-        for (StaffItem staffItem : list) {
-            if (delNum.equals(staffItem.getStaffNum())) {
+        for (int i = 0; i < list.size(); i++) {
+            if (delNum.equals(list.get(i).getStaffNum())) {
                 staffDao.deleteStaff(delNum);
                 return true;
             }

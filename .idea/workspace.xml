@@ -9,19 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68818a4a-5c01-47b1-9292-a39337f21d2f" name="变更" comment="Merge remote-tracking branch 'origin/master'">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/user_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/bin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/flatlaf-2.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_0_31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_0_311.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="68818a4a-5c01-47b1-9292-a39337f21d2f" name="变更" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/s1.exe4j" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user.eml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user.userlibraries" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBCUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StaffFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StaffFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/StaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StaffController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/StaffDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/StaffDao.java" afterDir="false" />
@@ -38,6 +31,12 @@
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -47,6 +46,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2IdATJZ1RsbUSor1c03E5agcWxk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -65,12 +67,13 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;JavaSE-19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/asdfg/OneDrive/user/bin&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/asdfg/OneDrive/user/production/artifacts/user_jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
@@ -87,10 +90,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asdfg\OneDrive\user\production\artifacts\user_jar" />
       <recent name="C:\Users\asdfg\OneDrive\user\bin" />
       <recent name="C:\Users\asdfg\OneDrive\user\user\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asdfg\OneDrive\user\production\artifacts\user_jar" />
       <recent name="C:\Users\asdfg\OneDrive\user\bin" />
       <recent name="C:\Users\asdfg\OneDrive\user\user\.idea\lib" />
     </key>
@@ -156,6 +161,7 @@
       <workItem from="1670547457679" duration="15522000" />
       <workItem from="1670563878875" duration="2470000" />
       <workItem from="1670566366017" duration="1301000" />
+      <workItem from="1670572286069" duration="2171000" />
     </task>
     <task id="LOCAL-00001" summary="0.0.1">
       <created>1670501249171</created>
@@ -213,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670503010832</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="First commit">
+      <created>1670568294829</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670568294829</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +243,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="release" />
                       </list>
                     </value>
                   </entry>
@@ -249,6 +262,7 @@
     <MESSAGE value="0.0.2" />
     <MESSAGE value="0.0.3" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
 </project>

@@ -20,7 +20,7 @@ public class StaffController extends StaffFrame {
         login();
     }
 
-    public void login() {
+    public void login() {//login 登录
         List<StaffItem> dataList = staffService.queryStaffItems();
         boolean status = false;
         boolean vaildfalse;
@@ -87,7 +87,6 @@ public class StaffController extends StaffFrame {
         String[][] tbody = new String[list.size()][4];
         for (int i = 0; i < list.size(); i++) {
             StaffItem staffItem = list.get(i);
-            System.out.println(staffItem.getStaffNum());
             tbody[i][0] = staffItem.getStaffNum();
             tbody[i][1] = staffItem.getStaffName();
             tbody[i][2] = staffItem.getPasswd();

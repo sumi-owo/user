@@ -41,6 +41,7 @@ public class StaffDao {
     public void addStaffItem(StaffItem staffItem) {
         Connection conn = null;
         PreparedStatement pstmt = null;
+        int a = 0;
         try {
             conn = JDBCUtil.getConnection();
             String sql = "insert into user values(?,?,?,?)";
@@ -49,6 +50,7 @@ public class StaffDao {
             pstmt.setString(2, staffItem.getStaffName());
             pstmt.setString(3, staffItem.getPasswd());
             pstmt.setString(4, staffItem.getType());
+            a = pstmt.executeUpdate();
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -58,11 +60,13 @@ public class StaffDao {
     public void deleteStaff(String staffNum) {
         Connection conn = null;
         PreparedStatement pstmt = null;
+        int a = 0;
         try {
             conn = JDBCUtil.getConnection();
             String sql = "delete from user where staffNum=?";
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, staffNum);
+            a = pstmt.executeUpdate();
         } catch (Throwable e) {
             e.printStackTrace();
         }
@@ -71,21 +75,24 @@ public class StaffDao {
 
     public void updateStaffItem(StaffItem staffItem) {
         Connection conn = null;
-        PreparedStatement pstmt = null;
+        Statement stmt = null;
         ResultSet rs = null;
+        int a = 0;
         try {
             conn = JDBCUtil.getConnection();
-            String sql = "UPDATE user set staffNum=?,staffName=?,passwd=?,type=? WHERE staffNum=?";
-            pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, staffItem.getStaffNum());
-            pstmt.setString(2, staffItem.getStaffName());
-            pstmt.setString(3, staffItem.getPasswd());
-            pstmt.setString(4, staffItem.getType());
-            pstmt.setString(5, staffItem.getStaffNum());
+            // 获得Statement对象
+            stmt = conn.createStatement();
+            // 发送SQL语句
+            String sql = "UPDATE user set staffNum='" + staffItem.getStaffNum()
+                    + "',staffName='" + staffItem.getStaffName() + "',passwd='"
+                    + staffItem.getPasswd() + "',type='" + staffItem.getType()
+                    + "' WHERE staffNum=" + staffItem.getStaffNum();
+            a = stmt.executeUpdate(sql);
+
         } catch (Throwable e) {
             e.printStackTrace();
         }
-        JDBCUtil.release(pstmt, rs, conn);
+        JDBCUtil.release(stmt, rs, conn);
     }
 
     public List<StaffItem> query() {

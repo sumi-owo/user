@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="bin">
+    <archive path="C:/Users/asdfg/OneDrive/user/bin/flatlaf-2.6.jar" />
+    <archive path="C:/Users/asdfg/OneDrive/user/bin/mysql-connector-j-8.0.31.jar" />
+  </library>
+  <library name="javafx" />
+</eclipse-userlibraries>
+
