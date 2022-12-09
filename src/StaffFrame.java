@@ -151,6 +151,7 @@ public class StaffFrame extends JFrame implements ActionListener {
             @Override
             public void itemStateChanged(ItemEvent e) {
                 if (e.getStateChange() == ItemEvent.SELECTED) {
+                    System.out.println(1);
                     order = getOrder(cb_select.getSelectedIndex());
                     query();
                 }

@@ -9,17 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68818a4a-5c01-47b1-9292-a39337f21d2f" name="变更" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/s1.exe4j" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user.eml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user.userlibraries" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="68818a4a-5c01-47b1-9292-a39337f21d2f" name="变更" comment="Second commit">
+      <change afterPath="$PROJECT_DIR$/src/dao/StaffDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domin/StaffItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/user_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/user_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StaffFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StaffFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/StaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StaffController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/StaffDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/StaffDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/StaffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/StaffService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user.iml" beforeDir="false" afterPath="$PROJECT_DIR$/user.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,38 +54,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;JavaSE-19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/asdfg/OneDrive/user/production/artifacts/user_jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "jdk.selected.JAVA_MODULE": "JavaSE-19",
+    "last_opened_file_path": "C:/Users/asdfg/OneDrive/user",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "工件",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.scopes",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件&quot;: [
-      &quot;JAVA&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件": [
+      "JAVA"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asdfg\OneDrive\user" />
       <recent name="C:\Users\asdfg\OneDrive\user\production\artifacts\user_jar" />
       <recent name="C:\Users\asdfg\OneDrive\user\bin" />
       <recent name="C:\Users\asdfg\OneDrive\user\user\src" />
@@ -100,7 +97,7 @@
       <recent name="C:\Users\asdfg\OneDrive\user\user\.idea\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.StaffController">
+  <component name="RunManager" selected="JAR 应用程序.user.jar">
     <configuration name="StaffController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="JavaSE-19" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -135,9 +132,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR 应用程序.user.jar" />
         <item itemvalue="应用程序.StaffController" />
         <item itemvalue="应用程序.StaffFrame" />
-        <item itemvalue="JAR 应用程序.user.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +158,7 @@
       <workItem from="1670547457679" duration="15522000" />
       <workItem from="1670563878875" duration="2470000" />
       <workItem from="1670566366017" duration="1301000" />
-      <workItem from="1670572286069" duration="2171000" />
+      <workItem from="1670572286069" duration="3578000" />
     </task>
     <task id="LOCAL-00001" summary="0.0.1">
       <created>1670501249171</created>
@@ -226,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670568294829</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Second commit">
+      <created>1670574641322</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670574641322</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +267,7 @@
     <MESSAGE value="0.0.3" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
   </component>
 </project>
